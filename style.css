@@ -104,8 +104,14 @@ a.active {
   text-decoration: underline;
 }
 
+a {
+  transition: transform 1s linear;
+  transform-origin: center bottom;
+}
+
 a:hover {
   text-decoration: underline;
+  transform: scale(1.2);
 }
 
 /*
@@ -267,6 +273,7 @@ Newsletter styles
   width: 352px;
 }
 
+
 /*
 
 Form styles
@@ -303,4 +310,26 @@ button {
   color: #50ad9c;
   border: 2px solid #50ad9c;
   font-weight: 400;
+  transition: transform 1s linear;
+  transform-origin: center bottom;
 }
+
+/*
+
+Fade styles
+
+*/
+
+.fade {
+  transition: background-color 1s;
+}
+
+.fade:hover {
+  background-color: #b6b5b5;
+}
+
+
+
+
+
+
